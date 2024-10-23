@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className='col-span-full xl:col-span-2'>
           <a rel='noreferrer noopener' href='/' className='font-bold text-xl flex'>
             <Store className='mr-2' />
-            Ecom Store
+            FieldTech Development
           </a>
         </div>
 
@@ -19,7 +19,7 @@ export const Footer = () => {
           <div>
             <a
               rel='noreferrer noopener'
-              href='https://www.youtube.com/@beastovsk'
+              href=''
               className='opacity-60 hover:opacity-100'
             >
               Youtube
@@ -27,7 +27,7 @@ export const Footer = () => {
           </div>
 
           <div>
-            <a rel='noreferrer noopener' href='https://t.me/beastovsk' className='opacity-60 hover:opacity-100'>
+            <a rel='noreferrer noopener' href='' className='opacity-60 hover:opacity-100'>
               Telegram
             </a>
           </div>
@@ -47,13 +47,6 @@ export const Footer = () => {
               О нас
             </a>
           </div>
-
-          <div>
-            <a rel='noreferrer noopener' href='#pricing' className='opacity-60 hover:opacity-100'>
-              Цены
-            </a>
-          </div>
-
           <div>
             <a rel='noreferrer noopener' href='#faq' className='opacity-60 hover:opacity-100'>
               Вопросы
@@ -63,7 +56,7 @@ export const Footer = () => {
       </section>
 
       <section className='container pb-14 text-center'>
-        <h3>&copy; 2024 Ecom store, Наршинов А.А. ИНН 645326949589</h3>
+        <h3>&copy; 2024 FieldTech Development, Фамиолия И.И. ИНН 228337556</h3>
       </section>
     </footer>
   );

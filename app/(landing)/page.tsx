@@ -24,7 +24,7 @@ export default async function Page() {
       <HowItWorks />
       <Features />
       <Services />
-      <Pricing />
+      {/* <Pricing /> */}
       <PurchaseRequestForm />
       <FAQ />
       <Footer />
