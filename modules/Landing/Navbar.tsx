@@ -20,6 +20,14 @@ const routeList: RouteProps[] = [
   {
     href: '/blog',
     label: 'Блог'
+  },
+  {
+    href: '/devoloper',
+    label: 'Разработка'
+  },
+  {
+    href: '/products',
+    label: 'Приложения'
   }
 ];
 
@@ -33,7 +41,7 @@ export const Navbar = () => {
           <NavigationMenuItem className='font-bold flex'>
             <Link rel='noreferrer noopener' href='/' className='ml-2 font-bold text-xl flex items-center'>
               <Store className='mr-2' />
-              Ecom Store
+              FieldTech Development
             </Link>
           </NavigationMenuItem>
 
@@ -62,13 +70,13 @@ export const Navbar = () => {
                   ))}
                   <Link
                     rel='noreferrer noopener'
-                    href='https://t.me/beastovsk'
+                    href=''
                     target='_blank'
                     className={`w-[110px] border ${buttonVariants({
                       variant: 'secondary'
                     })}`}
                   >
-                    Поддержка <ArrowRight className='ml-2 w-5 h-5' />
+                    Обсудить проект <ArrowRight className='ml-2 w-5 h-5' />
                   </Link>
                 </nav>
               </SheetContent>
@@ -94,11 +102,11 @@ export const Navbar = () => {
           <div className='hidden md:flex gap-2'>
             <Link
               rel='noreferrer noopener'
-              href='https://t.me/beastovsk'
+              href=''
               target='_blank'
               className={`border ${buttonVariants({variant: 'secondary'})}`}
             >
-              Поддержка <ArrowRight className='ml-2 w-5 h-5' />
+              Обсудить проект <ArrowRight className='ml-2 w-5 h-5' />
             </Link>
           </div>
         </NavigationMenuList>
