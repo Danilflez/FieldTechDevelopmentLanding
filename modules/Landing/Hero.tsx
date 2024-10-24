@@ -9,12 +9,12 @@ export const Hero = () => {
   return (
     <section
     className='container flex flex-col items-center py-24 md:py-36 space-y-10 text-center'
-    style={{
-      backgroundImage: "url('/image/Portfolio template thubnail.png')",
-      // backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-    }}
+    // style={{
+    //   backgroundImage: "url('/image/Portfolio template thubnail.png')",
+    //   // backgroundSize: 'cover',
+    //   backgroundPosition: 'center',
+    //   backgroundRepeat: 'no-repeat',
+    // }}
   >
       {/* Main Title Section */}
       <div className='max-w-3xl space-y-6'>

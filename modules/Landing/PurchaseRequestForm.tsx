@@ -49,36 +49,38 @@ export const PurchaseRequestForm = () => {
 
     setIsSubmitting(true);
 
-    const TELEGRAM_API_TOKEN = '7319980228:AAGYT0fdIfxgJrLBYbp8XkX4oDP-UbBjoSM';
-    const CHAT_ID = '1069385289';
-    const message = `Вопрос:\nИмя: ${formData.name}\nТелефон: ${formData.phone}\nСообщение: ${formData.message}`;
+    // const TELEGRAM_API_TOKEN = '7319980228:AAGYT0fdIfxgJrLBYbp8XkX4oDP-UbBjoSM';
+    // const CHAT_ID = '1069385289';
+    // const message = `Вопрос:\nИмя: ${formData.name}\nТелефон: ${formData.phone}\nСообщение: ${formData.message}`;
 
-    try {
-      await fetch(`https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          chat_id: CHAT_ID,
-          text: message
-        })
-      });
+    // try {
+    //   await fetch
+    //   (`https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage`
+    //     , {
+    //     method: 'POST',
+    //     headers: {
+    //       // 'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({
+    //       chat_id: CHAT_ID,
+    //       text: message
+    //     })
+    //   });
 
-      toast({
-        title: 'Заявка отправлена!',
-        description: 'Мы свяжемся с вами в ближайшее время.'
-      });
+    //   toast({
+    //     title: 'Заявка отправлена!',
+    //     description: 'Мы свяжемся с вами в ближайшее время.'
+    //   });
 
-      setFormData({name: '', phone: '', message: ''});
-    } catch (error) {
-      toast({
-        title: 'Ошибка отправки',
-        description: 'Пожалуйста, попробуйте снова.'
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    //   setFormData({name: '', phone: '', message: ''});
+    // } catch (error) {
+    //   toast({
+    //     title: 'Ошибка отправки',
+    //     description: 'Пожалуйста, попробуйте снова.'
+    //   });
+    // } finally {
+    //   setIsSubmitting(false);
+    // }
   };
 
   return (
