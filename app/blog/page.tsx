@@ -1,5 +1,6 @@
 import Article from '@/modules/Blog/Article/Article';
 import {articles} from '@/modules/Blog/articles';
+import {Navbar} from '@/modules/Landing/Navbar';
 import Blog from '@/modules/Blog/Blog/Blog';
 import {Metadata} from 'next';
 import React from 'react';
@@ -41,7 +42,7 @@ export async function generateMetadata({searchParams}: {searchParams?: {article:
     },
     // @ts-ignore
     jsonLd: {
-      '@context': 'https://schema.org',
+      // '@context': 'https://schema.org',
       '@type': 'Article',
       headline: blog.title,
       description: blog.content.slice(0, 150),
@@ -56,9 +57,10 @@ export default async function Page({searchParams}: {searchParams?: {article: str
 
   if (!blog) {
     return (
-      <div className='flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8'>
+      <>
+        <Navbar />
         <Blog />
-      </div>
+      </>
     );
   }
 

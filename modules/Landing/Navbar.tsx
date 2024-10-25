@@ -22,10 +22,6 @@ const routeList: RouteProps[] = [
     label: 'Блог'
   },
   {
-    href: '/devoloper',
-    label: 'Разработка'
-  },
-  {
     href: '/products',
     label: 'Приложения'
   }

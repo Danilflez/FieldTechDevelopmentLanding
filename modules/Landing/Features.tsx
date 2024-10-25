@@ -1,6 +1,6 @@
-import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card';
-import {Badge} from '@/components/ui/badge';
-import {Monitor, Settings, BarChart} from 'lucide-react'; // Importing icons from Lucide
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Monitor, Settings, BarChart } from 'lucide-react'; // Importing icons from Lucide
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -13,18 +13,17 @@ const features: FeatureProps[] = [
     icon: <Monitor className='w-10 h-10 text-primary' />,
     title: 'Адаптивный дизайн',
     description:
-      'Ваш интернет-магазин будет прекрасно выглядеть и работать на любом устройстве, будь то компьютер, планшет или смартфон.'
+      'Ваш продукт будет прекрасно выглядеть и работать на любом устройстве, будь то компьютер, планшет или смартфон.'
   },
   {
     icon: <Settings className='w-10 h-10 text-primary' />,
     title: 'Интуитивно понятный интерфейс',
-    description: 'Удобная админ панель позволяет легко управлять вашим магазином без специальных знаний.'
+    description: 'Удобная админ панель позволяет легко управлять вашим продуктом без специальных знаний.'
   },
   {
     icon: <BarChart className='w-10 h-10 text-primary' />,
     title: 'CRM система',
-    description:
-      'Получайте полезную информация для управления отношениями с клиентами'
+    description: 'Получайте полезную информация для управления отношениями с клиентами'
   }
 ];
 
@@ -47,8 +46,10 @@ export const Features = () => {
     <section id='features' className='container py-24 sm:py-32 space-y-8'>
       <h2 className='text-3xl lg:text-4xl font-bold md:text-center'>
         Основные{' '}
-        <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>возможности</span>{' '}
-        наших интернет-магазинов
+        <span className='bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text'>
+          возможности
+        </span>{' '}
+        наших продуктов
       </h2>
 
       <div className='flex flex-wrap md:justify-center gap-4'>
@@ -62,7 +63,7 @@ export const Features = () => {
       </div>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-        {features.map(({icon, title, description}: FeatureProps) => (
+        {features.map(({ icon, title, description }: FeatureProps) => (
           <Card key={title} className='bg-muted/50'>
             <CardHeader>
               <CardTitle className='flex items-center gap-4'>
