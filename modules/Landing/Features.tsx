@@ -47,7 +47,7 @@ export const Features = () => {
       <h2 className='text-3xl lg:text-4xl font-bold md:text-center'>
         Основные{' '}
         <span className='bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text'>
-          возможности
+         Преимущества
         </span>{' '}
         наших продуктов
       </h2>

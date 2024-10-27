@@ -13,6 +13,8 @@ import {Services} from '@/modules/Landing/Services';
 import {Sponsors} from '@/modules/Landing/Sponsors';
 import {Team} from '@/modules/Landing/Team';
 import {Testimonials} from '@/modules/Landing/Testimonials';
+import {Partner} from '@/modules/Landing/Partners';
+import {Products} from '@/modules/Landing/Products';
 import React from 'react';
 
 export default async function Page() {
@@ -20,10 +22,12 @@ export default async function Page() {
     <>
       <Navbar />
       <Hero />
+      <Partner />
       <About />
       <HowItWorks />
       <Features />
       <Services />
+      <Products />
       {/* <Pricing /> */}
       <PurchaseRequestForm />
       <FAQ />

@@ -12,19 +12,21 @@ interface RouteProps {
   label: string;
 }
 
+// {
+//   href: '/',
+//   label: 'Главная'
+// },
+// {
+//   href: '/blog',
+//   label: 'Блог'
+// },
+// {
+//   href: '/products',
+//   label: 'Приложения'
+// }
+
 const routeList: RouteProps[] = [
-  {
-    href: '/',
-    label: 'Главная'
-  },
-  {
-    href: '/blog',
-    label: 'Блог'
-  },
-  {
-    href: '/products',
-    label: 'Приложения'
-  }
+  
 ];
 
 export const Navbar = () => {
